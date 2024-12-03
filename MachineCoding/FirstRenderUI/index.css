@@ -1,0 +1,55 @@
+.heading{
+    text-align: center;
+}
+
+.mainBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+
+    width: 30rem;
+    height: 10rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    margin: 0.8rem;
+}
+
+.leftImage{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.leftImage img {
+    max-width: 50%;    /* The image will scale with the width of the container */
+    max-height: 50%;   /* The image will scale with the height of the container */
+    object-fit: contain; /* This ensures the aspect ratio is maintained */
+  }
+  
+
+.details{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoFirstRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inforSecondRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    padding: 1rem;
+}
