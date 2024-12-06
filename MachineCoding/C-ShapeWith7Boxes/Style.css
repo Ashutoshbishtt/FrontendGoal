@@ -1,0 +1,27 @@
+.maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.box {
+  border: 2px solid black;
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem;
+}
+
+.green-color{
+    background-color: green;
+}
