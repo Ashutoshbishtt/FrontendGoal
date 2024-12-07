@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  height: 50rem;
+}
+
+.chessBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+}
+
+.col {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 1px solid black;
+}
+
+.black-color {
+  background-color: black;
+}
+
+.white-color {
+  background-color: white;
+}
+
+.blue-color {
+  background-color: blueviolet;
+}
