@@ -84,15 +84,15 @@ function clearChessBoard() {
   });
 }
 
-chessBoard.addEventListener("mouseover", (e) => {
-  clearChessBoard();
-  if (e.target.classList.contains("col")) {
-    let row = parseInt(e.target.dataset.row);
-    let col = parseInt(e.target.dataset.col);
-    console.log(row, col);
-    placeTheBishop(row, col);
-  }
-});
+// chessBoard.addEventListener("mouseover", (e) => {
+//   clearChessBoard();
+//   if (e.target.classList.contains("col")) {
+//     let row = parseInt(e.target.dataset.row);
+//     let col = parseInt(e.target.dataset.col);
+//     console.log(row, col);
+//     placeTheBishop(row, col);
+//   }
+// });
 
 chessBoard.addEventListener("click", (e) => {
   clearChessBoard();
