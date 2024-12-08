@@ -33,6 +33,7 @@ negativeButton.addEventListener("click", (e) => {
   if (newVal < 0) {
     counter.innerText = 0;
     alert("Value cannot be less than 0");
+    return;
   }
   counter.innerText = newVal;
   console.log(newVal);
