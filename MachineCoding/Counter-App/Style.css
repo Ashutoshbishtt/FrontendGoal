@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.counter {
+  font-size: 6rem;
+}
+
+.incrementDecrementText {
+  font-size: 1.4rem;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.buttonContainer .positive,
+.buttonContainer .negative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.buttonContainer .positive {
+  background-color: green;
+}
+
+.buttonContainer .negative {
+  background-color: red;
+}
+
+.numberInput {
+  width: 4rem;
+}
+
+.resetButton {
+  font-size: 3rem;
+  background-color: yellowgreen;
+  border-radius: 1rem;
+}
