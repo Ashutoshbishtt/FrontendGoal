@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.otpInput {
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 1rem;
+  height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  width: 4rem;
+  cursor: not-allowed;
+  pointer-events: none;
+  /*pointer-events not allowed is important to avoid cursor on other input box */
+}
+
+.otp-input:focus {
+  border: none;
+  border-bottom: 5px solid orange;
+  outline: none;
+}
+
+.otp-input:nth-child(1) {
+  cursor: allowed;
+  pointer-events: all;
+}
