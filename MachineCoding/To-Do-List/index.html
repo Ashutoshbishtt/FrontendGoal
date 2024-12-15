@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,12 +19,13 @@
 
       <div class="container">
         <div class="inputContainer">
-          <textarea type="text" rows="5" cols="30"></textarea
-          ><span class="span"><button class="button">Add +</button></span>
+          <textarea id="inputFiled" type="text" rows="5" cols="30"></textarea
+          ><span class="span"
+            ><button class="button" id="addButton">Add +</button></span
+          >
         </div>
-        <div class="todoContainer">
-          <div class="singleTodo">
-          </div>
+        <div class="todoContainer" id="todoContainer">
+          <h1 class="containerHeading">All todo</h1>
         </div>
       </div>
     </div>
