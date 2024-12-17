@@ -82,6 +82,11 @@ function displayTodo(todo) {
     "class",
     todo.completed === false ? "fa-solid fa-check" : "fa-solid fa-x"
   );
+
+  completed.addEventListener("click", () => {
+    doneNotDone.apply(todo);
+  });
+
   completeIcon.setAttribute("style", "color:#b197fc");
   completed.appendChild(completeIcon);
   editButtons.appendChild(completed);
@@ -119,4 +124,8 @@ function deleteTodo() {
   todoList.forEach((e) => {
     displayTodo(e);
   });
+}
+
+function doneNotDone() {
+  console.log("Done");
 }
