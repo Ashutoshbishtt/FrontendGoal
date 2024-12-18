@@ -84,7 +84,7 @@ function displayTodo(todo) {
   );
 
   completed.addEventListener("click", () => {
-    doneNotDone.apply(todo);
+    doneNotDone.call(todo);
   });
 
   completeIcon.setAttribute("style", "color:#b197fc");
@@ -127,5 +127,18 @@ function deleteTodo() {
 }
 
 function doneNotDone() {
-  console.log("Done");
+  this.completed = !this.completed;
+
+  todoList.forEach((todo) => {
+    if (todo._id == this._id) {
+      todo.completed = this.completed;
+    }
+  });
+
+  localStorage.setItem("todoList", JSON.stringify(todoList));
+
+  wrapper.innerHTML = "";
+  todoList.forEach((todo) => {
+    displayTodo(todo);
+  });
 }
