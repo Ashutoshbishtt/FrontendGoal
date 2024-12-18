@@ -1,22 +1,3 @@
-/* <div class="singleTodo">
-            <div class="text">
-              text Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Rerum, aliquam.
-            </div>
-            <div class="editButtons">
-              <div class="add">
-                <i class="fas fa-edit" style="color: #b197fc"></i>
-              </div>
-              <div class="completed">
-                <i class="fa-solid fa-check" style="color: #b197fc"></i>
-                 <i class="fa-solid fa-x" style="color: #B197FC;"></i> 
-              </div>
-              <div class="delete">
-                <i class="fa-solid fa-trash" style="color: #b197fc"></i>
-              </div>
-            </div>
-          </div> */
-
 const wrapper = document.getElementById("todoContainer");
 const addButton = document.getElementById("addButton");
 const inputText = document.getElementById("inputFiled");
@@ -72,6 +53,14 @@ function displayTodo(todo) {
   editIcon.setAttribute("style", "color:#b197fc");
   add.appendChild(editIcon);
   editButtons.appendChild(add);
+
+  editIcon.addEventListener("click", (e) => {
+    // console.log("Hello");
+    let todoText = todo.todoText;
+    // console.log(todoText);
+
+    text.removeChild()
+  });
 
   // Completed button
   let completed = document.createElement("div");
