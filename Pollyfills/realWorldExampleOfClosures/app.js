@@ -8,3 +8,6 @@ function counter() {
 }
 
 let countIncrementer = counter();
+
+console.log(countIncrementer());
+console.log(countIncrementer());
